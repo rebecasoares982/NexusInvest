@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NexusInvest - Consultoria e Análise Financeira</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+        }
+
+        .btn-custom {
+            background-color: #147CBD;
+            color: white;
+            border-radius: 50px;
+        }
+
+        .btn-custom:hover {
+            background-color: #4CC3D3;
+            color: #000;
+        }
+
+        .rounded-section {
+            border-radius: 15px;
+            padding: 40px;
+            background-color: #111;
+        }
+
+        .cta-button {
+            background-color: #147CBD;
+            border-radius: 50px;
+            padding: 10px 30px;
+            color: white;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #4CC3D3;
+            color: #000;
+        }
+
+        .footer {
+            background-color: #111;
+            padding: 20px 0;
+            color: white;
+        }
+
+        .social-icons a {
+            color: #4CC3D3;
+            font-size: 20px;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #147CBD;
+        }
+
+        .card {
+            background-color: #1c1c1c;
+            border: none;
+            color: white;
+        }
+
+        .card-img-top {
+            width: 115px;
+            height: 120px;
+            margin: auto;
+            padding: 7px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background-color: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .testimonial-card {
+            background-color: #1c1c1c;
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+        }
+
+        .testimonial-card .client-name {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Animações */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .logo-nexus {
+            width: auto;
+            height: 60px;
+        }
+
+        .banner {
+            border-radius: 12px;
+            width: 98%;
+            height: 350px;
+            object-fit: cover;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container py-4 fade-in">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/logo-nexus.png" class="logo-nexus" alt="NexusInvest">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testemunhos">Testemunhos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <img src="assets/images/business.jpg" class="banner">
+    </section>
+
+    <Br>
+
+    <section id="sobre" class="py-5 rounded-section my-5 fade-in">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Sobre a NexusInvest</h2>
+                    <p>
+                        Com mais de 20 anos de experiência no mercado financeiro, a NexusInvest oferece consultoria
+                        especializada
+                        em investimentos, análise de riscos e gestão financeira. Nossa equipe de especialistas trabalha
+                        lado a lado com
+                        clientes para garantir que eles estejam sempre preparados para tomar decisões financeiras
+                        sólidas e seguras.
+                    </p>
+                    <ul>
+                        <li>Consultoria estratégica para grandes e pequenas empresas</li>
+                        <li>Análise detalhada de riscos e projeções financeiras</li>
+                        <li>Expertise em mercados emergentes e internacionais</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/nexus-intro.jpg" alt="Consultoria Financeira" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-5">Vídeo Institucional</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card fade-in">
+                        <img src="assets/images/consultoria-investimentos.png" class="card-img-top"
+                            alt="Consultoria de Investimentos">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultoria de Investimentos</h5>
+                            <p class="card-text">Estratégias de investimento personalizadas para maximizar seu
+                                patrimônio e retorno financeiro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card fade-in">
+                        <img src="assets/images/analise-riscos.png" class="card-img-top" alt="Análise de Riscos">
+                        <div class="card-body">
+                            <h5 class="card-title">Análise de Riscos</h5>
+                            <p class="card-text">Mitigue riscos financeiros com nossas soluções baseadas em dados e
+                                análise profunda do mercado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card fade-in">
+                        <img src="assets/images/consultoria-financeira.png" class="card-img-top"
+                            alt="Consultoria Financeira">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultoria Financeira</h5>
+                            <p class="card-text">Consultoria abrangente para planejamento financeiro a longo prazo e
+                                sustentabilidade empresarial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testemunhos" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="mb-5">O que nossos clientes dizem</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card fade-in">
+                        <p>"A NexusInvest transformou completamente a forma como gerimos nossos investimentos. Suas
+                            estratégias são sólidas e confiáveis."</p>
+                        <span class="client-name">— João Silva, CEO da SilvaCorp</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card fade-in">
+                        <p>"Sua análise de riscos nos ajudou a evitar decisões financeiras catastróficas. Um time
+                            realmente profissional."</p>
+                        <span class="client-name">— Fernanda Souza, CFO da TechInvest</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card fade-in">
+                        <p>"Trabalhar com a NexusInvest é sempre uma experiência enriquecedora. Suas consultorias nos
+                            colocam à frente do mercado."</p>
+                        <span class="client-name">— Carlos Oliveira, Diretor Financeiro da GlobalTrade</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 rounded-section my-5 fade-in">
+        <div class="container">
+            <h2 class="text-center mb-5">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom btn-block">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="contato-nexusinvest.jpg" alt="Contato" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-4 fade-in">NexusInvest</h1>
+            <p class="lead fade-in">Segurança, Confiança e Consultoria de Alto Nível</p>
+            <a href="#contato" class="cta-button mt-3 fade-in">Fale Conosco</a>
+        </div>
+    </section>
+
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 NexusInvest. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
