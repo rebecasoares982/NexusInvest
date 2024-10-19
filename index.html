@@ -82,21 +82,17 @@
 
             <Br>
             <Br>
-            <!-- Carousel Bootstrap -->
-            <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+             <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
 
-                <!-- Indicadores (bolinhas de navegação) -->
-                <div class="carousel-indicators">
+                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
                 </div>
 
-                <!-- Slides de vídeos (3 cards por linha) -->
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
+                 <div class="carousel-inner">
+                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="video-card">
@@ -125,8 +121,7 @@
                         </div>
                     </div>
 
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
+                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="video-card">
@@ -156,8 +151,7 @@
                     </div>
                 </div>
 
-                <!-- Controles (passadores) -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel"
+                 <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
@@ -316,49 +310,12 @@
         </div>
     </footer>
 
-    <!-- Botão Voltar ao Topo -->
-    <a href="#" id="back-to-top" title="Voltar ao Topo">
+     <a href="#" id="back-to-top" title="Voltar ao Topo">
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <script>
-        // Quando o documento estiver pronto
-        document.addEventListener("DOMContentLoaded", function () {
-            // Seleciona o botão
-            const backToTopButton = document.getElementById("back-to-top");
-
-            // Quando o usuário rolar para baixo, mostre o botão
-            window.onscroll = function () {
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    backToTopButton.style.display = "block";
-                } else {
-                    backToTopButton.style.display = "none";
-                }
-            };
-
-            // Quando o usuário clicar no botão, volte ao topo
-            backToTopButton.onclick = function (event) {
-                event.preventDefault(); // Previne o comportamento padrão do link
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth" // Rolagem suave
-                });
-            };
-        });
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('.navbar').addClass('scrolled');
-            } else {
-                $('.navbar').removeClass('scrolled');
-            }
-        });
-
-    </script>
-
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+ <script src="script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
